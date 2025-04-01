@@ -13,8 +13,28 @@
             max-height: 80vh; /* Limit height */
             overflow-y: auto; /* Enable vertical scrolling */
         }
-        .grid-item.i3 {
-            text-align: center; /* Center align text for i3 items */
+        .grid-item {
+            display: flex; /* Use flexbox for alignment */
+            flex-direction: column; /* Stack content vertically */
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+            text-align: center; /* Center align text */
+            height: 200px; /* Set a fixed height for the box */
+            padding: 10px; /* Add padding inside the box */
+            box-sizing: border-box; /* Include padding in height/width calculations */
+        }
+        .grid-item img {
+            width: auto; /* Maintain aspect ratio */
+            height: auto; /* Maintain aspect ratio */
+            max-width: 80%; /* Ensure the image does not overflow the box */
+            max-height: 120px; /* Limit the height to fit within the box */
+            object-fit: contain; /* Ensure the image fits without distortion */
+            margin: auto; /* Center the image */
+        }
+        .grid-item p {
+            margin: 10px 0 0; /* Add spacing above the text */
+            font-size: 0.9rem; /* Adjust font size */
+            color: #f5f5f5; /* Set text color */
         }
     </style>
 </head>
@@ -34,54 +54,102 @@
             <div class="grid-container">
                 <!-- i3 Items -->
                 <div class="grid-item i3">
-                    <img src="../assets/intelcpu/i3/10100.png" alt="Intel Core i3-10100">
+                    <img src="../../assets/intelcpu/intel-i3/10100.png" alt="Intel Core i3-10100">
                     <p>Intel Core i3-10100</p>
                 </div>
                 <div class="grid-item i3">
-                    <img src="../assets/intelcpu/i3/10100f.png" alt="Intel Core i3-10100F">
+                    <img src="../../assets/intelcpu/intel-i3/10100f.png" alt="Intel Core i3-10100F">
                     <p>Intel Core i3-10100F</p>
                 </div>
                 <div class="grid-item i3">
-                    <img src="../assets/intelcpu/i3/12100.png" alt="Intel Core i3-12100">
+                    <img src="../../assets/intelcpu/intel-i3/12100.png" alt="Intel Core i3-12100">
                     <p>Intel Core i3-12100</p>
                 </div>
                 <div class="grid-item i3">
-                    <img src="assets/intelcpu/i3/12100f.png" alt="Intel Core i3-12100F">
+                    <img src="../../assets/intelcpu/intel-i3/12100f.png" alt="Intel Core i3-12100F">
                     <p>Intel Core i3-12100F</p>
                 </div>
                 <div class="grid-item i3">
-                    <img src="../assets/intelcpu/i3/13100.png" alt="Intel Core i3-13100">
+                    <img src="../../assets/intelcpu/intel-i3/13100.png" alt="Intel Core i3-13100">
                     <p>Intel Core i3-13100</p>
                 </div>
                 <div class="grid-item i3">
-                    <img src="../assets/intelcpu/i3/13100f.png" alt="Intel Core i3-13100F">
+                    <img src="../../assets/intelcpu/intel-i3/13100f.png" alt="Intel Core i3-13100F">
                     <p>Intel Core i3-13100F</p>
                 </div>
                 <div class="grid-item i3">
-                    <img src="../assets/intelcpu/i3/14100.png" alt="Intel Core i3-14100">
+                    <img src="../../assets/intelcpu/intel-i3/14100.png" alt="Intel Core i3-14100">
                     <p>Intel Core i3-14100</p>
                 </div>
                 <div class="grid-item i3">
-                    <img src="../assets/intelcpu/i3/14100f.png" alt="Intel Core i3-14100F">
+                    <img src="../../assets/intelcpu/intel-i3/14100f.png" alt="Intel Core i3-14100F">
                     <p>Intel Core i3-14100F</p>
                 </div>
                 <!-- i5 Items -->
-                <div class="grid-item i5">i5 - Item 1</div>
-                <div class="grid-item i5">i5 - Item 2</div>
-                <div class="grid-item i5">i5 - Item 3</div>
-                <div class="grid-item i5">i5 - Item 4</div>
-                <div class="grid-item i5">i5 - Item 5</div>
-                <div class="grid-item i5">i5 - Item 6</div>
-                <div class="grid-item i5">i5 - Item 7</div>
-                <div class="grid-item i5">i5 - Item 8</div>
-                <div class="grid-item i5">i5 - Item 9</div>
-                <div class="grid-item i5">i5 - Item 10</div>
-                <div class="grid-item i5">i5 - Item 11</div>
-                <div class="grid-item i5">i5 - Item 12</div>
-                <div class="grid-item i5">i5 - Item 13</div>
-                <div class="grid-item i5">i5 - Item 14</div>
-                <div class="grid-item i5">i5 - Item 15</div>
-                <div class="grid-item i5">i5 - Item 16</div>
+                <div class="grid-item i5">
+                    <img src="../../assets/intelcpu/intel-i5/11400.png" alt="Intel Core i5-11400">
+                    <p>Intel Core i5-11400</p>
+                </div>
+                <div class="grid-item i5">
+                    <img src="../../assets/intelcpu/intel-i5/11400f.png" alt="Intel Core i5-11400F">
+                    <p>Intel Core i5-11400F</p>
+                </div>
+                <div class="grid-item i5">
+                    <img src="../../assets/intelcpu/intel-i5/11600k.png" alt="Intel Core i5-11600K">
+                    <p>Intel Core i5-11600K</p>
+                </div>
+                <div class="grid-item i5">
+                    <img src="../../assets/intelcpu/intel-i5/11600kf.png" alt="Intel Core i5-11600KF">
+                    <p>Intel Core i5-11600KF</p>
+                </div>
+                <div class="grid-item i5">
+                    <img src="../../assets/intelcpu/intel-i5/12400.png" alt="Intel Core i5-12400">
+                    <p>Intel Core i5-12400</p>
+                </div>
+                <div class="grid-item i5">
+                    <img src="../../assets/intelcpu/intel-i5/12400f.png" alt="Intel Core i5-12400F">
+                    <p>Intel Core i5-12400F</p>
+                </div>
+                <div class="grid-item i5">
+                    <img src="../../assets/intelcpu/intel-i5/12600k.png" alt="Intel Core i5-12600K">
+                    <p>Intel Core i5-12600K</p>
+                </div>
+                <div class="grid-item i5">
+                    <img src="../../assets/intelcpu/intel-i5/12600kf.png" alt="Intel Core i5-12600KF">
+                    <p>Intel Core i5-12600KF</p>
+                </div>
+                <div class="grid-item i5">
+                    <img src="../../assets/intelcpu/intel-i5/13400.png" alt="Intel Core i5-13400">
+                    <p>Intel Core i5-13400</p>
+                </div>
+                <div class="grid-item i5">
+                    <img src="../../assets/intelcpu/intel-i5/13400f.png" alt="Intel Core i5-13400F">
+                    <p>Intel Core i5-13400F</p>
+                </div>
+                <div class="grid-item i5">
+                    <img src="../../assets/intelcpu/intel-i5/13600k.png" alt="Intel Core i5-13600K">
+                    <p>Intel Core i5-13600K</p>
+                </div>
+                <div class="grid-item i5">
+                    <img src="../../assets/intelcpu/intel-i5/13600kf.png" alt="Intel Core i5-13600KF">
+                    <p>Intel Core i5-13600KF</p>
+                </div>
+                <div class="grid-item i5">
+                    <img src="../../assets/intelcpu/intel-i5/14400.png" alt="Intel Core i5-14400">
+                    <p>Intel Core i5-14400</p>
+                </div>
+                <div class="grid-item i5">
+                    <img src="../../assets/intelcpu/intel-i5/14400f.png" alt="Intel Core i5-14400F">
+                    <p>Intel Core i5-14400F</p>
+                </div>
+                <div class="grid-item i5">
+                    <img src="../../assets/intelcpu/intel-i5/14600k.png" alt="Intel Core i5-14600K">
+                    <p>Intel Core i5-14600K</p>
+                </div>
+                <div class="grid-item i5">
+                    <img src="../../assets/intelcpu/intel-i5/14600kf.png" alt="Intel Core i5-14600KF">
+                    <p>Intel Core i5-14600KF</p>
+                </div>
                 <!-- i7 Items -->
                 <div class="grid-item i7">i7 - Item 1</div>
                 <div class="grid-item i7">i7 - Item 2</div>
