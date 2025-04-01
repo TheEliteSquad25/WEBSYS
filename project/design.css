@@ -26,6 +26,23 @@ body {
     height: 60px;
 }
 
+#image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+    position: absolute; 
+    top:220px; 
+    right: 230px; 
+}
+
+#image-container img {
+    width: 700px; 
+    height: 1000; 
+   
+    object-fit: contain; 
+}
+
 .intro-image {
     display: flex;
     justify-content: center;
@@ -473,19 +490,3 @@ body {
     color: #ffffff; /* White text for descriptions */
 }
 
-#image-container {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    padding: 20px; 
-    position: absolute; 
-    top:230px; 
-    left: 800px; 
-}
-
-#image-container img {
-    width: 700px; 
-    height: 1000; 
-   
-    object-fit: contain; 
-}
